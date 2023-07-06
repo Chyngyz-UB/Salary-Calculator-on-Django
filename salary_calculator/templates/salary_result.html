@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Salary Result</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Net Salary Calculation Result</h1>
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Base Salary</td>
+            <td>{{ base_salary }}</td>
+        </tr>
+        <tr>
+            <td>Social Fund Contribution</td>
+            <td>{{ social_fund_contribution }}</td>
+        </tr>
+        <tr>
+            <td>Income Tax</td>
+            <td>{{ income_tax }}</td>
+        </tr>
+        <tr>
+            <td>Net Salary</td>
+            <td>{{ net_salary }}</td>
+        </tr>
+    </table>
+    <p>Your net salary for the period is: {{ net_salary }}</p>
+</body>
+</html>
